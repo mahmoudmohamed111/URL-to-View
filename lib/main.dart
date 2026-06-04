@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:url_to_view/views/splash_view.dart';
 
 void main() {
-  runApp(app);
+  runApp(URL_to_ViewApp());
 }
 
 class URL_to_ViewApp extends StatelessWidget {
@@ -9,6 +10,6 @@ class URL_to_ViewApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Spashview());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SplashView());
   }
 }

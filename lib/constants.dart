@@ -1,0 +1,5 @@
+import 'package:flutter/material.dart';
+
+const String kLogo = "assets/images/logo.png";
+
+const Color kPrimarycolor = Color(0xff20244A);
