@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'package:url_to_view/constants.dart';
 import 'package:url_to_view/features/splash/presentaion/views/splash_view.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Hive.openBox(kListbox);
   runApp(URL_to_ViewApp());
 }
 
