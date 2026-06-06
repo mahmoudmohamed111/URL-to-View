@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_to_view/views/Image_view.dart';
 import 'package:url_to_view/widgets/Image_item.dart';
 import 'package:url_to_view/widgets/custom_Textfeild.dart';
 
@@ -41,7 +42,19 @@ class _HomeBodyState extends State<HomeBody> {
                 crossAxisCount: 2,
               ),
               itemBuilder: (context, index) {
-                return Image_item(Imageurl: ImagesList[index]);
+                return Image_item(
+                  Imageurl: ImagesList[index],
+                  ontap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        settings: RouteSettings(arguments: ImagesList[index]),
+                        builder: (context) {
+                          return ImageView();
+                        },
+                      ),
+                    );
+                  },
+                );
               },
             ),
           ),
