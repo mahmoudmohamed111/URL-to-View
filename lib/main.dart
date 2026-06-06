@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_to_view/views/splash_view.dart';
+import 'package:url_to_view/features/splash/presentaion/views/splash_view.dart';
 
 void main() {
   runApp(URL_to_ViewApp());

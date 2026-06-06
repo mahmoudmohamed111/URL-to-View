@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:url_to_view/views/Image_view.dart';
-import 'package:url_to_view/widgets/Image_item.dart';
-import 'package:url_to_view/widgets/custom_Textfeild.dart';
+import 'package:url_to_view/features/Home/presentaion/views/Image_view.dart';
+import 'package:url_to_view/features/Home/presentaion/views/widgets/Image_item.dart';
+import 'package:url_to_view/features/Home/presentaion/views/widgets/custom_Textfeild.dart';
 
-class HomeBody extends StatefulWidget {
-  HomeBody({super.key});
+class Home_view_body extends StatefulWidget {
+  Home_view_body({super.key});
 
   @override
-  State<HomeBody> createState() => _HomeBodyState();
+  State<Home_view_body> createState() => _Home_view_bodyState();
 }
 
-class _HomeBodyState extends State<HomeBody> {
+class _Home_view_bodyState extends State<Home_view_body> {
   late String imageurl;
   List<String> ImagesList = [
     "https://mediayk.gemini.media/img/yallakora/portrait/2026/5/24/gettyimages-2277987206-612x612-easy-resize-com2026_5_24_19_42.webp",

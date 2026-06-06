@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_to_view/constants.dart';
-import 'package:url_to_view/views/Home_view.dart';
+import 'package:url_to_view/features/Home/presentaion/views/Home_view.dart';
 
 class Splashviewbody extends StatelessWidget {
   const Splashviewbody({super.key});
